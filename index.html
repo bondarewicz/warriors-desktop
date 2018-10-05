@@ -1,19 +1,132 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Windsor Warriors Desktop</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/photon.min.css">
+
+    <!-- Javascript -->
+    <script src="./js/menu.js" charset="utf-8"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <div class="window">
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <!-- <h1 class="title">toolsbar here</h1> -->
+        <div class="toolbar-actions">
+          <div class="btn-group">
+            <button class="btn btn-default">
+              <span class="icon icon-home"></span>
+            </button>
+            <button class="btn btn-default">
+              <span class="icon icon-plus-circled"></span>
+            </button>
+            <button class="btn btn-default">
+              <span class="icon icon-trash"></span>
+            </button>
+          </div>
+          
+          <div class="btn-group">
+            <button class="btn btn-default">
+              <span class="icon icon-upload-cloud"></span>
+            </button>
+
+            <button class="btn btn-default">
+              <span class="icon icon-code"></span>
+            </button>
+          </div>  
+        </div>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="nav-group-title">Games</h5>
+              <span class="nav-group-item active">
+                <span class="icon icon-folder"></span>
+                 Game vs Woking Blackhawk Thunder B C6 
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-folder"></span>
+                 Game vs Wolfpack Wolves B4 
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-folder"></span>
+                 Game vs Woodley Jets C11 
+              </span>
+              
+              <!-- <h5 class="nav-group-title">Teams</h5>
+              <span class="nav-group-item">
+                <span class="icon icon-users"></span>
+                Windsor Warriors
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-users"></span>
+                Wolfpack Wolves
+              </span>
+              <span class="nav-group-item">
+                <span class="icon icon-users"></span>
+                Woodley Jets
+              </span>
+              <h5 class="nav-group-title">Stats</h5>
+              <span class="nav-group-item">
+                <span class="icon icon-gauge"></span>
+                Wolfpack Wolves
+              </span> -->
+            </nav>
+          </div>
+
+          <div class="pane">
+            <table class="table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>NAME</th>
+                  <th>PTS</th>
+                  <th>TS%</th>
+                  <th>EFF</th>
+                  <th>BPM</th>
+                  <th>FG</th>
+                  <th>3PT</th>
+                  <th>FT</th>
+                  <th>OREB</th>
+                  <th>DREB</th>
+                  <th>FOUL</th>
+                  <th>STL</th>
+                  <th>TO</th>
+                  <th>BLK</th>
+                  <th>ASST</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>bondarewicz</td>
+                  <td>11</td>
+                  <td>31%</td>
+                  <td>7.0</td>
+                  <td>+1.4</td>
+                  <td>8-20</td>
+                  <td>1-6</td>
+                  <td>2-2</td>
+                  <td>2</td>
+                  <td>7</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>9</td>
+                  <td>5</td>
+                  <td>3</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
